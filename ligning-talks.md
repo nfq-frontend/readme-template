@@ -1,6 +1,6 @@
 | Who   |      What      |  When |
-|--------------------------|:-------------:|------:|
-| Vytautas Lozickas |  MobX | ... |
+|--------------------------|-------------|------:|
+| Vytautas Lozickas | MobX | ... |
 | Vytautas Lozickas |  Typescript | ... |
 | Martynas Girdvainis |    Apie Eta   |   2020-04-xx |
-| Darius Aukštinaitis | actions and Apps and image compression |    2020-04-10 |
+| Darius Aukštinaitis | Github Actions and Apps. Image compression case |    2020-04-10 |

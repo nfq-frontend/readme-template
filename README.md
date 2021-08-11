@@ -1,7 +1,9 @@
-![logo](https://seeklogo.com/images/R/red-wave-company-logo-05004F3F93-seeklogo.com.png)
+<img src="https://seeklogo.com/images/R/red-wave-company-logo-05004F3F93-seeklogo.com.png" align="right" width="130">
 
 # Project title
-Small description about the project
+> Small description about the project
+
+<hr>
 
 ## Table of Contents
 
@@ -13,7 +15,9 @@ Small description about the project
 1. [Additional resources](#additional-resources)
 1. [Troubleshooting](#troubleshooting)
 
-## Intro
+## 🚀Intro 
+
+
 
 This is boilerplate repository for `react-native` project.
 This boilerplate should be used to initiate every `react-native` project in Kilo.Health.

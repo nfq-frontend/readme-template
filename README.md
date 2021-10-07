@@ -114,7 +114,7 @@ Description
 Description
 
 
-## Usefull links
+## 🌍 Usefull links
 
 - Check Next.js Docs, they are very useful.
 - Styled Components

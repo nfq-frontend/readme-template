@@ -1,52 +1,67 @@
 <img src="https://seeklogo.com/images/R/red-wave-company-logo-05004F3F93-seeklogo.com.png" align="right" width="130">
 
 # Project title
-> Small description about the project
+> Small description about the project (Business case)
+> 
 
 <hr>
 
 ## Table of Contents
 
 1. [Intro](#intro)
-1. [Usefull links](#usefull-links)
-1. [Setup](#setup)
-1. [Run application](#run-application)
-1. [Git conventions](#git-conventions)
-1. [Additional resources](#additional-resources)
-1. [Troubleshooting](#troubleshooting)
+2. [Run application](#run-application)
+3. Coding Conventions
+4. [Usefull links](#usefull-links)
+6. [Git conventions](#git-conventions)
+8. [Troubleshooting](#troubleshooting)
 
-## 🚀Intro 
+## 📕 Intro 
+
+This is boilerplate repository for react-native project. This boilerplate should be used to initiate every react-native project in Kilo.Health.
 
 
+## 🚀 Run application
 
-This is boilerplate repository for `react-native` project.
-This boilerplate should be used to initiate every `react-native` project in Kilo.Health.
+### Requirements
 
-**Usage:**
+- Yarn
+- Node
 
-1. Clone/Download this repo
-2. Remove .git directory
-
-```bash
-rm -rf .git
-```
-
-3. Rename project by running following script
+**NOTE:** We always use **Yarn** as our default package manager tool.
 
 ```bash
-yarn rename "<your app name here>" -b <your app bundle id>
+// start development server
+yarn start
+
+// run ios app
+yarn ios
+
+// run android app
+yarn android
 ```
 
-4. Install pods
+### Setup for mac
 
+**PRO TIP:** Make sure you’re connected to the internet!🙃
+
+Open your terminal or run it inside this project's integrated terminal:
+
+```bash
+git --version
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+chmod -R 777 ./scripts
+./scripts/reactNativeStarterPack.sh
 ```
-yarn pod-install
-```
 
-5. Go read React/JSX style guide 👀
-6. Go code 🚀
+**NOTE:** Script doesn't cover Xcode installation so you have to grab it from [here.](https://developer.apple.com/xcode/resources/)
 
-## Additional info
+### Run E2E tests
+
+Description
+
+## 📎 Additional info
 
 - For application monitoring and error tracking we're using [Sentry](https://docs.sentry.io/)
 - For deployments and releases we're using [Fastlane](https://docs.fastlane.tools/)
@@ -54,7 +69,7 @@ yarn pod-install
 - Boilerplate includes [@kilo.health/rn-utils library](https://bitbucket.org/kilogrupe/kilo-rn-utils/src/master/) which covers firebase, globals and various utils useful for development. _If installation of utils fails, you should ask for access to the library_
 - Localization support is also included in the boilerplate
 
-**Fastlane setup:**
+### Fastlane setup:
 
 1. _fastlane/**Matchfile:**_ Enter your `app_identifier`
    e.g. _com.kilogroup.projectname_
@@ -62,7 +77,7 @@ yarn pod-install
 3. _fastlane/**Appfile:**_ Add your `app_identifier` and `package_name`
    e.g. _app_identifier("com.kilogroup.projectname")_ and _package_name("com.kiloprojectname")_
 
-**Sentry setup:**
+### Sentry setup:
 
 1. Fill in your project name `defaults.project=<your-project-name>` at _**ios/sentry.properties:**_ and _**android/sentry.properties:**_
 
@@ -82,32 +97,32 @@ const languageHandler = (lang) => {
 
 Locale config can be found in `src/utils/locale/`. Language files are located at `src/assets/locale/`.
 
-## Development prerequisites
+## 🖥 Coding Conventions
 
-- Yarn
-- Node
-- Fastlane
-- Cocapods
-- Xcode
-- Android Studio
-- react-native-cli
+Description
 
-## Setup for mac
+### Project Structure
 
-**PRO TIP:** Make sure you’re connected to the internet!🙃
+Description
 
-Open your terminal or run it inside this project's integrated terminal:
+### How to run tests?
 
-```bash
-git --version
+Description
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+### How to run lint?
 
-chmod -R 777 ./scripts
-./scripts/reactNativeStarterPack.sh
-```
+Description
 
-**NOTE:** Script doesn't cover Xcode installation so you have to grab it from [here.](https://developer.apple.com/xcode/resources/)
+
+## Usefull links
+
+- Check Next.js Docs, they are very useful.
+- Styled Components
+- Atomic design
+- [READ Kilo.Health React/JSX style guide](STYLE_GUIDE_DOC.md)
+- [Painless React Native Setup for Mac](https://shift.infinite.red/painless-react-native-setup-for-mac-windows-linux-956c23d2abf9)
+- [Fastlane setup](https://carloscuesta.me/blog/shipping-react-native-apps-with-fastlane/)
+
 
 ## Git conventions
 
@@ -133,26 +148,6 @@ Same goes for complicated package updates (e.g. `react-native`). Also make
 sure to be on the new branch when changing something inside native projects
 (namely `ios` and `android` directories).
 
-## Run application
-
-**NOTE:** We always use **Yarn** as our default package manager tool.
-
-```bash
-// start development server
-yarn start
-
-// run ios app
-yarn ios
-
-// run android app
-yarn android
-```
-
-## Additional resources
-
-- [READ Kilo.Health React/JSX style guide](STYLE_GUIDE_DOC.md)
-- [Painless React Native Setup for Mac](https://shift.infinite.red/painless-react-native-setup-for-mac-windows-linux-956c23d2abf9)
-- [Fastlane setup](https://carloscuesta.me/blog/shipping-react-native-apps-with-fastlane/)
 
 ## Troubleshooting
 

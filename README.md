@@ -15,12 +15,12 @@
 6. [Git conventions](#git-conventions)
 8. [Troubleshooting](#troubleshooting)
 
-## 📕 Intro 
+## Intro 
 
-This is boilerplate repository for react-native project. This boilerplate should be used to initiate every react-native project in Kilo.Health.
+This is boilerplate.
 
 
-## 🚀 Run application
+## Run application
 
 ### Requirements
 
@@ -66,16 +66,15 @@ Description
 - For application monitoring and error tracking we're using [Sentry](https://docs.sentry.io/)
 - For deployments and releases we're using [Fastlane](https://docs.fastlane.tools/)
 - For navigation we're using [react-native-router-flux](https://www.npmjs.com/package/react-native-router-flux), you can find demo navigation example on `src/containers/Routes.js`
-- Boilerplate includes [@kilo.health/rn-utils library](https://bitbucket.org/kilogrupe/kilo-rn-utils/src/master/) which covers firebase, globals and various utils useful for development. _If installation of utils fails, you should ask for access to the library_
 - Localization support is also included in the boilerplate
 
 ### Fastlane setup:
 
 1. _fastlane/**Matchfile:**_ Enter your `app_identifier`
-   e.g. _com.kilogroup.projectname_
+   e.g. _com.nfq.projectname_
 2. _fastlane/**Fastline:**_ Enter your app name to fields `workspace` and `scheme` and edit path to firebase config script.
 3. _fastlane/**Appfile:**_ Add your `app_identifier` and `package_name`
-   e.g. _app_identifier("com.kilogroup.projectname")_ and _package_name("com.kiloprojectname")_
+   e.g. _app_identifier("com.nfq.projectname")_ and _package_name("com.nfqprojectname")_
 
 ### Sentry setup:
 
@@ -97,7 +96,7 @@ const languageHandler = (lang) => {
 
 Locale config can be found in `src/utils/locale/`. Language files are located at `src/assets/locale/`.
 
-## 🖥 Coding Conventions
+## Coding Conventions
 
 Description
 
@@ -114,12 +113,11 @@ Description
 Description
 
 
-## 🌍 Usefull links
+## Usefull links
 
 - Check Next.js Docs, they are very useful.
 - Styled Components
 - Atomic design
-- [READ Kilo.Health React/JSX style guide](STYLE_GUIDE_DOC.md)
 - [Painless React Native Setup for Mac](https://shift.infinite.red/painless-react-native-setup-for-mac-windows-linux-956c23d2abf9)
 - [Fastlane setup](https://carloscuesta.me/blog/shipping-react-native-apps-with-fastlane/)
 

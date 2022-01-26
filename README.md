@@ -1,7 +1,7 @@
 <img src="https://avatars.githubusercontent.com/u/61867156?s=200&v=4" align="right" width="130">
 
 # Project title
-Small description about the project (Business case)
+Short description about the project (Business case)
 
 <hr>
 

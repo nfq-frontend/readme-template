@@ -7,7 +7,7 @@ Short description about the project (Business case)
 
 ## Table of Contents
 
-1. [Intro](#intro)
+1. [About the project](#about-the-project)
 1. [Run application](#run-application)
     1. [Requirements](#requirements)
     1. [Setup for Mac](#setup-for-mac)
@@ -23,7 +23,7 @@ Short description about the project (Business case)
 1. [Git conventions](#git-conventions)
 1. [Troubleshooting](#troubleshooting)
 
-## Intro 
+## About the project 
 
 This is boilerplate.
 

@@ -1,19 +1,27 @@
 <img src="https://avatars.githubusercontent.com/u/61867156?s=200&v=4" align="right" width="130">
 
 # Project title
-> Small description about the project (Business case)
-> 
+Small description about the project (Business case)
 
 <hr>
 
 ## Table of Contents
 
 1. [Intro](#intro)
-2. [Run application](#run-application)
-3. Coding Conventions
-4. [Usefull links](#usefull-links)
-6. [Git conventions](#git-conventions)
-8. [Troubleshooting](#troubleshooting)
+1. [Run application](#run-application)
+    1. [Requirements](#requirements)
+    1. [Setup for Mac](#setup-for-mac)
+    1. [Run E2E tests](#run-e2e-tests)
+1. [Additional info](#additional-info)
+    1. [Fastlane setup](#fastlane-setup)
+    1. [Sentry setup](#sentry-setup)
+3. [Coding conventions](#coding-conventions)
+    1. [Project structure](#project-structure)
+    1. [How to run tests?](#how-to-run-tests)
+    1. [How to run lint?](#how-to-run-lint)
+1. [Useful links](#useful-links)
+1. [Git conventions](#git-conventions)
+1. [Troubleshooting](#troubleshooting)
 
 ## Intro 
 
@@ -40,9 +48,9 @@ yarn ios
 yarn android
 ```
 
-### Setup for mac
+### Setup for Mac
 
-**PRO TIP:** Make sure you’re connected to the internet!🙃
+> **PRO TIP:** Make sure you’re connected to the internet!🙃
 
 Open your terminal or run it inside this project's integrated terminal:
 
@@ -59,9 +67,11 @@ chmod -R 777 ./scripts
 
 ### Run E2E tests
 
-Description
+```
+yarn test-e2e
+```
 
-## 📎 Additional info
+## Additional info
 
 - For application monitoring and error tracking we're using [Sentry](https://docs.sentry.io/)
 - For deployments and releases we're using [Fastlane](https://docs.fastlane.tools/)
@@ -96,24 +106,52 @@ const languageHandler = (lang) => {
 
 Locale config can be found in `src/utils/locale/`. Language files are located at `src/assets/locale/`.
 
-## Coding Conventions
+## Coding conventions
 
-Description
+### Naming
+
+#### Event emmiters
+`on<event-name>`, e.g.: `onChange`, `onSubmitClick` etc
+
+#### Event handlers
+`handle<event-name>`, e.g.: `handleChange`, `handleSubmitClick` etc
+
+#### Variables
+Avoid shortened variable names:
+* use `option` instead of `opt`
+* use `event` instead of `e` or `evt`
+* use `nextLevelButton` instead of `nextLvlBtn` or `nxtLevelButt`
+* exceptions:
+    * common shortenings that are used in everyday language, such as "config", "admin" etc
+    * `for` loop variables (`i`, `j` etc)
 
 ### Project Structure
 
-Description
+#### assets/icons
+Any new icon should be placed in `assets/icons` folder. And should be in `svg` format. And run the script
+
+```
+yarn svg:icons
+```
+
+This script will:
+
+1. Optimize and replace all svg files
+1. Overwrite `assets/icons/index.ts` file and add export or update exports
 
 ### How to run tests?
 
-Description
+```
+yarn test
+```
 
 ### How to run lint?
 
-Description
+```
+yarn lint
+```
 
-
-## Usefull links
+## Useful links
 
 - Check Next.js Docs, they are very useful.
 - Styled Components
@@ -128,17 +166,17 @@ Branches should be named in a following manner:
 
 ```bash
 // new feature
-git checkout -b feature/comprehensible-name-<trello card number (if exists)>
+git checkout -b feature/<JiraID (if exists)>-comprehensible-name
 
 // refactoring
-git checkout -b refactoring/comprehensible-name-<trello card number (if exists)>
+git checkout -b refactoring/<JiraID (if exists)>-comprehensible-name
 
 // bugfix
-git checkout -b fix/comprehensible-name-<trello card number (if exists)>
+git checkout -b fix/<JiraID (if exists)>-comprehensible-name
 
 // dependency updates
-git checkout -b update/package-name-<trello card number (if exists)>
-git checkout -b update/orther-comprehensible-name-<trello card number (if exists)>
+git checkout -b update/<JiraID (if exists)>-package-name
+git checkout -b update/<JiraID(if exists)>-other-comprehensible-name
 ```
 
 Make sure that for every bigger change you have checked out to new branch.
